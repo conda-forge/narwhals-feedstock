@@ -1,5 +1,5 @@
 {% set name = "narwhals" %}
-{% set version = "0.9.9" %}
+{% set version = "0.9.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/narwhals-{{ version }}.tar.gz
-  sha256: 39f9ec38a75bcf49d03812dfd448e83ed91f15551cb3eadcd50308f33fd02799
+  sha256: 2220515b9f1c4dd14d4e6a9162be00e18e937cd647f4fd4a13d8e4aa2cf0bd83
 
 build:
   noarch: python
