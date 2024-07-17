@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@thewchan](https://github.com/thewchan/)
+* [@username](https://github.com/username/)
 
