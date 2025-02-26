@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,6 +21,19 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+  run_constrained:
+    # See optional dependencies in https://github.com/narwhals-dev/narwhals/blob/main/pyproject.toml
+    # Matches MIN_VERSIONS in https://github.com/narwhals-dev/narwhals/blob/main/narwhals/utils.py
+    - pandas >=0.25.3
+    - modin # See https://github.com/narwhals-dev/narwhals/issues/817 
+    - cudf >=24.10.0 # no conda-forge package
+    - pyarrow>=11.0.0
+    - pyspark>=3.5.0
+    - polars>=0.20.3
+    - dask-core>=2024.8
+    - duckdb>=1.0
+    - ibis-framework>=6.0.0
+    # no conda package: - sqlframe>=3.22.0
 
 test:
   imports:
