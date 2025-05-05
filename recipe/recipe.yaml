@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: narwhals
-  version: "1.37.0"
+  version: "1.38.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/narwhals-${{ version }}.tar.gz
-  sha256: 47cb7bb63afd85e72c5260a8c6281fce88b2e12fbe18eba777b980e3dccd5a45
+  sha256: 0a356a21ad00de0db0e631332a823a6a6755544bd10b8e68a02d75029c71392e
 
 build:
   number: 0
