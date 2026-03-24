@@ -13,7 +13,7 @@ source:
   sha256: 652a1fcc9d432bbf114846688884c215f17eb118aa640b7419295d2f910d2a8b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -30,7 +30,9 @@ tests:
       imports:
         - narwhals
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Extremely lightweight compatibility layer between pandas, Polars, cuDF, and Modin
