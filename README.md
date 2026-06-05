@@ -3,13 +3,13 @@ About narwhals-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/narwhals-feedstock/blob/main/LICENSE.txt)
 
-Home: https://marcogorelli.github.io/narwhals/
+Home: https://narwhals-dev.github.io/narwhals/
 
 Package license: MIT
 
 Summary: Extremely lightweight compatibility layer between pandas, Polars, cuDF, and Modin
 
-Development: https://github.com/MarcoGorelli/narwhals
+Development: https://github.com/narwhals-dev/narwhals
 
 Current build status
 ====================
